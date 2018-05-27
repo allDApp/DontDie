@@ -1,0 +1,148 @@
+/* Global Reset */
+
+html, body, div, span, button, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font-family:"微软雅黑","Microsoft Yahei","Myriad Set Pro","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+	
+}
+a{text-decoration:none;}
+p{line-height: 28px;font-size:15px;}
+article, 
+aside, 
+details, 
+figcaption, 
+figure, 
+footer, 
+header, 
+hgroup, 
+menu, 
+nav, 
+section {
+	display: block;
+}
+ol, 
+ul {
+	list-style: none;
+}
+.inline{
+	display:inline-block;
+}
+.f-r{
+	float:right;
+}
+@media screen and (min-width:320px) and (max-width:1024px){
+	.f-r{
+	float:initial;
+	}
+}
+.clear{
+	clear:both;
+}
+.mobile{
+	display:none;
+}
+.pcOnly{
+	display:block;
+}
+@media screen and (min-width:320px) and (max-width:1024px){
+	.mobile{
+	display:block;
+	}
+	.pcOnly{
+		display:none;
+	}
+}
+.mainDes h2{
+	padding:112px 0 32px;
+	font-size:30px;
+	font-weight:100;
+	text-align:center;
+}
+.mainDes h3{
+	font-size:20px;
+	text-align:center;
+	margin: -20px 0 30px;
+}
+@media screen and (min-width:320px) and (max-width:1024px){
+	.mainDes h2{
+		padding:32px 0;
+	}
+	.mainDes h3{
+		width:80%;
+		margin:-10px auto 14px;
+		text-align:left;
+	}
+}
+.mainDes p{
+	text-align:center;
+	font-size:12px;
+}
+@media screen and (min-width:320px) and (max-width:480px){
+	.mainDes p{
+	text-align:left;
+	font-size:12px;
+	padding:0 20px;
+	}
+}
+.pc{display:block;}
+.mobile{display:none !important;}
+@media screen and (min-width:320px) and (max-width:1024px){
+	.pc{display:none !important;}
+	.mobile{display:block !important;}
+}
+
+.breadscrumb{
+	line-height:26px;
+	color:#4c4c4c;
+	text-align:left;
+	margin: 18px 0;
+}
+.breadscrumb p{
+	color:#1dafec;
+	font-size:14px;
+}
+.breadscrumb a,
+.breadscrumb a:active,
+.breadscrumb a:hover,
+.breadscrumb a:visited{
+	color:#000;
+	font-size:14px;
+}
+
+.btn{
+    
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #1DAFEC;
+    border-color: #189AC8;
+}
+
+.btn:hover{
+    background: #59cafa;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

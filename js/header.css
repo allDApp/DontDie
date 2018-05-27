@@ -1,0 +1,237 @@
+/*navigation*/
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+nav{
+	text-align:center;
+	position:relative;
+	z-index:100;
+}
+nav,
+nav ul.menu{
+	height:58px;
+	background:#1a1a1a;
+}
+
+@media screen and (min-width:320px) and (max-width:1174px){
+	nav ul.menu{
+		display:none;
+		text-align:left;
+		height:auto;
+		position: relative;
+    	z-index: 100;	
+	}
+	nav{
+		height:55px;
+		text-align: left;
+	}
+	nav .title{
+		display: inline-block!important;
+		color:#fff;
+		text-align:left;
+		line-height:55px;
+		padding:0 20px;
+		width: 100%;
+	}
+	nav .title a{
+		float: right!important;
+	}
+	.navMore{
+		display: inline-block!important;
+		position:absolute;
+		right:20px;
+		top:24px;
+	}
+	.productBox{
+		display:none;
+	}
+}
+nav ul.menu li,
+nav ul.menu li a{
+	display:inline-block;
+	font-size:14px;
+	line-height:58px;
+	color:#fff;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+@media screen and (min-width:320px) and (max-width:1174px){
+	nav ul.menu li,nav ul.menu li a{
+	display:inherit;
+	font-size:14px;
+	line-height:40px;
+	}
+	.pc{
+		display: none;
+	}
+}
+nav ul.menu li{
+	margin:0 14px;
+}
+nav ul.menu li a:hover{
+	color:#1dafec;
+}
+.nav-icon{
+    position: relative;
+    /*left: 8%;*/
+    top: 18px;
+}
+@media screen and (min-width:1174px) and (max-width:1310px){
+	.nav-icon{
+		left:2%;
+	}
+}
+.flex{
+	display:flex;
+	display:-webkit-flex;
+	display:-ms-flex;
+	display:-moz-flex;
+	display:-o-flex;
+	 flex-wrap:wrap;
+	-webkit-flex-wrap:wrap;
+	-ms-flex-wrap:wrap;
+	-moz-flex-wrap:wrap;
+	-o-flex-wrap:wrap;
+	justify-content:flex-start;
+}
+nav .subnav-products{
+	width:836px;
+	position:absolute;
+	border-top:1px solid #1dafec; 
+	z-index:10;
+	/*display:none;*/
+}
+nav .subnav-club,
+nav .subnav-open,
+nav .subnav-dev-center{
+	width:300px;
+	position:absolute;
+	border-top:1px solid #1dafec; 
+	z-index:10;
+	/*display:none;*/
+
+}
+nav .subnav-club{
+	width:150px;
+}
+@media screen and (min-width:320px) and (max-width:1174px){
+	
+}
+nav .subnav-club .productBox a,
+nav .subnav-open .productBox a,
+nav .subnav-dev-center .productBox a,
+nav .subnav-products .productBox a{
+	color:#959595;
+	width:100%;
+	height:100%;
+	display:block;
+	text-decoration:none;
+}
+nav .subnav-products .productBox{
+	background:#000;
+	width:208px;
+	height:62px;
+	color:#959595;
+	cursor:pointer;
+	text-align:left;
+	border-bottom:1px solid #1c1c1c;
+	border-right:1px solid #1c1c1c;
+}
+nav .subnav-products .productBox:nth-of-type(4n+4){
+	border-right:none;
+}
+nav .subnav-products .productBox:nth-last-of-type(4),
+nav .subnav-products .productBox:nth-last-of-type(3),
+nav .subnav-products .productBox:nth-last-of-type(2),
+nav .subnav-products .productBox:nth-last-of-type(1){
+	border-bottom:none;
+}
+nav .subnav-club .productBox,
+nav .subnav-open .productBox,
+nav .subnav-dev-center .productBox{
+	background:rgba(0,0,0,0.9);
+	width:100%;
+	height:50px;
+	line-height:50px;
+	color:#b1b1b1;
+	cursor:pointer;
+	border-bottom:1px solid #131313;
+	text-align:left;
+	position:relative;
+}
+nav .subnav-club span,
+nav .subnav-open span,
+nav .subnav-dev-center span{
+	padding-left:20px;
+	font-size:12px;
+}
+
+nav .productBox:hover a{
+	color:#fff;
+	background:#01111a;
+}
+nav .productBox i{
+	height:100%;
+	vertical-align:middle;
+	display:inline-block;
+}
+nav .productBox img{
+	vertical-align:middle;
+	margin: 0 10px;
+}
+.subnav-products span{
+	font-size:12.5px;
+}
+nav .disable{
+	cursor:default;
+	border:none;
+	border-right:1px solid #000;
+}
+nav .disabled:nth-last-of-type(1){
+	border:none;
+}
+nav .disable:hover,
+nav .disable:visited{
+	background:#000;
+}
+nav .nav-arrow{
+	background:url(../img/nav-arrow.png);
+	background-position:0 0;
+	width: 7px;
+    height: 15px;
+    position: absolute;
+    right: 20px;
+    top: 17px;
+}
+nav .subnav-club .productBox:hover .nav-arrow,
+nav .subnav-open .productBox:hover .nav-arrow,
+nav .subnav-dev-center .productBox:hover .nav-arrow{
+	background-position:0 -15px;
+}
+.nav-icon-box{
+	z-index: 1000;
+	position:absolute;
+	height:100px;
+	width:78px;
+	border:4px solid #272727;;
+	background:#212121;
+	right:4%;
+	text-align:center;
+	top:0;
+}
+
+/*#pc-lang a{
+    position: absolute;
+    width: 107px;
+     border: none; 
+     background: none; 
+    right: 10%;
+    top: 0;
+}*/
